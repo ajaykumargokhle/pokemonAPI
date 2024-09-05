@@ -1,0 +1,113 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and Container Styling */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Centering Content */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 350px; /* Maximum width for larger screens */
+    margin: auto;
+}
+
+/* Heading Styling */
+h1 {
+    color: #2a75bb;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input Field Styling */
+.pokemon {
+    width: 100%; /* Adjust width for responsiveness */
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.pokemon:focus {
+    border-color: #ffcb05;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 203, 5, 0.5);
+}
+
+/* Button Styling */
+button {
+    width: 100%; /* Adjust width for responsiveness */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcb05;
+    color: #2a75bb;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px; /* Adds space below the button */
+}
+
+button:hover {
+    background-color: #f7a41d;
+}
+
+/* Image Styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#pokemonSprite {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#pokemonSprite:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px; /* Less padding for smaller screens */
+    }
+    
+    h1 {
+        font-size: 20px; /* Smaller font size for headings */
+    }
+
+    .pokemon, button {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Less padding for input and button */
+    }
+
+    #pokemonSprite {
+        width: 120px; /* Smaller image size for mobile */
+        height: 120px;
+    }
+}
